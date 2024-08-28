@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="icon" href="/Create_New_Account_Page/Animated_Logo_CoLab_Crafts.gif.gif" type="image/gif">
+</head>
+<body class="inside-body" id="body">    <!-- Body Tag Starts here-->
+
+
+<header class="header" id="header">  <!-- Header Tag starts here-->
+
+
+        <a class="logo reload" id="logo-header">  <!-- Colab Crafts logo will be displayed there and upon clicking will refresh the page !-->
+            <figure id="logo-webpage"> <!-- image inside logo-header , class give "figure" -->
+                <img src="secondarylogo.png" alt="img" id="logo-webpage">
+            </figure>
+        </a>
+
+        <a class="self-profile-button" id="self-profile-button-header"> <!-- Ancor tag will be used for user's profile and profile picture will be shown there, which will redirect to user's profile when clicked!  Class Given to it is "".self-profile-button" -->
+            <figure class="self-profile-picture"><img src="secondarypicturelogo.jpg" class="self-profile-picture" alt=""></figure>     
+        </a>
+
+            <form  method="get" class="search-container" role="search">
+                <label for="searchbar-header" class="visually-hidden">Search</label>
+                <input type="search" class="searchbar" id="searchbar-header" name="q" placeholder="Search" aria-label="Search">
+                <button type="submit" id="search-button" aria-label="Submit search">
+                    <i class="fa-solid fa-magnifying-glass searchicon"></i>
+                </button>
+            </form>
+
+        <span id="home-button-background-header" class="header-button-background home-button reload">   <!-- Home Button on the header, on clicking will refresh the page , or redirect to main page !-->
+        <a class="inside-body inside-header home-button button-header" id="home-button-header"> <!-- Home button , upon clicking will refresh the page #Fixed postion-->
+            <i class="fa-solid fa-house  font-awesome-icons inside-body inside-header inside-homebutton button-icon-header" id="home-button-icon"></i>
+            <h6 id="home-button-text" class="inside-body inside-header inside-homebutton button-text-header">Home</h6>
+        </a>
+        </span>
+
+        <span id="notification-button-background-header" class="header-button-background">    <!-- Notification button. Will redirect to notification page after clicking !-->
+        <a href="#" class="inside-body inside-header notification-button button-header" id="notification-button-header">   <!-- Notification button, all notifications related to anything will be displayed here and its position is also fixed-->
+        <i class="fa-regular fa-bell font-awesome-icons inside-body inside-header inside-notificationbutton button-icon-header" id="notification-button-icon"></i>
+        <h6 id="notification-button-text" class="inside-body inside-header inside-notificationbutton button-text-header">Notification</h6>
+        </a>
+        </span>
+
+        <span id="message-button-background-header" class="header-button-background">  <!-- Message Button. Will redirect to messages page on clicking-->
+        <a href="#" class="inside-body inside-header messages-button button-header" id="message-button-header">  <!-- Messages Button, chats and messages will be displayed there!-->
+            <i class="fa-regular fa-note-sticky font-awesome-icons inside-body inside-header inside-messagebutton button-icon-header" id="message-button-icon" ></i>
+        <h6 id="message-button-text" class="inside-body inside-header inside-messagebutton button-text-header">Messages</h6>
+        </a>
+        </span>
+
+
+        <span id="more-button-background-header" class="header-button-background more-button">  <!-- More Button. A Dilogue box will appear on clicking it-->
+            <a class="more-button button-header" id="more-button-header">
+                <i class="fa-solid fa-bars button-icon-header" id="more-button-icon" style="color: #ffffff;"></i>
+                <h6 class="inside-morebutton button-text-header" id="more-button-text">More</h6>
+            </a>
+        </span>
+        <span id="more-button-after-click-dialogue-box" class="inside-more">
+            <menu id="buttons-inside-more-button" class="inside-more">
+            <button class="button-inside-more-button">Profile</button>
+            <button class="button-inside-more-button">Settings</button>
+            <button class="button-inside-more-button">Help & Support</button>
+            <button class="button-inside-more-button">Terms & Conditions</button>
+            <button class="button-inside-more-button">Logout</button>
+        </menu>
+    </span>
+
+    
+
+    </header>
+<!-- Header Part ends here!-->
+
+
+
+
+<!-- Main Part Starts Here! -->
+
+
+
+    <main class="main" id="main">
+
+        <section id="section-1-main" class="profile-section-inside-main">
+
+            <article id="article-1-profile-section" class="articlesections-inside-profile-section-inside-main">   <!-- Article 1 of section 1 of main , contains the profile pic, name , bio of profile of the user who is using the page !!-->
+                <span id="article-1-profile-section-picture-section" class="self-profile-button">
+                <figure id="article-1-profile-section-picture" class="self-profile-picture"><img class="self-profile-picture" src="secondarypicturelogo.jpg" alt=""></figure>
+            </span>
+                <a href="#" id="article-1-profile-section-name-text" class="self-profile-name">Vishesh</a>
+                <p id="article-1-profile-section-bio-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+
+            <article id="article-2-profile-section" class="articlesections-inside-profile-section-inside-main">  <!-- Article 2 of section 1 of main, contains the profile followers, following, number of posts of the user whose account is being used////-->
+                <span id="article-2-profile-section-span1" class="box-count-followers-following-posts">
+                    <a class="text-inside-box-count">Followers</a>
+                    <a id="count-followers" class="counts-inside-box-count">x</a>
+                </span>
+                <span id="article-2-profile-section-span2" class="box-count-followers-following-posts">
+                    <a class="text-inside-box-count">Following</a>
+                    <a id="count-following" class="counts-inside-box-count">x</a>
+                </span>
+                <span id="article-3-profile-section-span3" class="box-count-followers-following-posts">
+                    <a class="text-inside-box-count">Posts</a>
+                    <a id="count-posts" class="counts-inside-box-count">x</a>
+                </span>
+            </article>
+
+            <article id="article-3-profile-section" class="articlesections-inside-profile-section-inside-main">
+
+            <span id="section1-article3-heading-title">
+                <h6>Share Something with us!</h6>
+            </span>
+            <span id="section1-article3-postcontents">
+                <span id="section1-article3-postcontents-profilepicture" class="self-profile-button">
+                        <figure id="section1-article3-postcontents-profilepicture-image-section" class="self-profile-picture"><img class="self-profile-picture" src="secondarypicturelogo.jpg" alt=""></figure>
+                </span>
+
+                <form action="#" id="section1-article3-postcontents-textform">
+                    <textarea class="post-content" name="post-content" id="section1-article3-postcontents-text" cols="0" rows="1" placeholder="Write Something !"></textarea>
+                </form>
+
+            </span>
+
+            <span id="section1-article3-post-media-buttons">
+                <input type="file" id="mediafiles" accept="image/*, video/*, audio/*, file/*" multiple class="mediafiles-input-button" >
+                <label for="mediafiles" class="custom-button-mediafiles">
+                    <i class="fa-solid fa-photo-film"></i>
+                Media
+                </label>
+
+                <button class="post-button" id="post-button">Post</button>
+
+
+            </span>
+
+
+            </article>
+
+        </section>
+
+
+        <section id="section-2-main" class="content-section-inside-main">
+
+            <section id="section-2-main-inside-content">
+
+
+            <article id="article-1-content-section" class="articlesections-inside-content-section-inside-main">
+
+                <span id="article-1-content-section-first-section">
+
+                <figure id="article-1-content-section-profile-picture-other-user" class="profile-picture-other-users">
+                    <img class="profile-picture profile-picture-other-users" src="secondarypicturelogo.jpg" alt="">
+                </figure>
+
+                <span id="article-1-content-section-profile-details-other-user">
+                    <a href="#" id="article-1-content-section-profile-name-other-user">Vishesh</a>
+                    <a href="#" id="article-1-content-section-other-user-position">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, quasi.</a>
+                    <a href="#" id="article-1-content-section-posting-time">1 Second Ago</a>
+                </span>
+                
+            </span>
+
+            </span>
+            </article>
+
+
+            <article id="article-2-content-section" class="articlesections-inside-content-section-inside-main">
+                <span id="article-2-content-section-post-caption"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas et, modi animi asperiores architecto nostrum totam quasi nisi quas, non enim cumque aliquid consequuntur aliquam? Iusto beatae voluptatibus vel inventor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum est fuga distinctio facere et officiis dicta necessitatibus consequuntur, nostrum culpa aspernatur. Officiis corrupti alias, tenetur at nihil fugit laudantium sed! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias magni dolor, consectetur ratione cum, fugiat modi quas quidem molestiae cumque praesentium reiciendis eius fuga culpa nemo minus optio neque quos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolorum blanditiis accusamus quibusdam accusantium minima cum consequatur eius culpa, asperiores odio architecto, quaerat facere quod iusto quisquam et doloremque in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur corporis harum autem placeat cum dolore, cupiditate hic perspiciatis! Facilis dolorum iste minus accusamus nemo provident commodi possimus doloremque. Ipsum, iusto?
+                Perferendis tempora nulla reprehenderit nihil dolore a enim eius, nobis nostrum. Inventore, deserunt aliquam nostrum provident cum sed sit voluptatum! Dolorum quam commodi repellat illo aut similique ab in blanditiis?
+                Unde ratione quibusdam debitis velit cupiditate omnis voluptate sint quis nobis animi id fugit error officiis obcaecati soluta quidem, eveniet odio veniam necessitatibus voluptatem reiciendis? Molestias earum odit deleniti nisi.
+                Quisquam consectetur voluptate dolor sequi, unde, maiores, quia nam quam neque expedita explicabo modi vitae minus necessitatibus delectus repellendus eligendi enim odio molestias! Eum doloribus facilis soluta tenetur voluptatum provident.
+                Hic blanditiis adipisci, ad quaerat itaque culpa libero quo facilis! Quia reiciendis doloribus aut quo ipsam recusandae magni nobis reprehenderit deserunt commodi, rem saepe et voluptatem, placeat modi incidunt? Officia?</p><button class="more-caption-button">...see more</button>
+                </span>
+                <span id="article-2-content-section-post-picture">
+                    <img src="secondarypicturelogo.jpg" alt="#">
+                </span>
+            </article>
+
+            <article id="article-3-content-section" class="articlesections-inside-content-section-inside-main">
+                <span id="article-3-content-section-interactions-reviews-shares-count-outer">
+                    <span id="article-3-content-section-interactions-count" class="article-3-content-section-interactions-reviews-shares-count">__Interactions</span>
+                    <span id="article-3-content-section-reviews-count" class="article-3-content-section-interactions-reviews-shares-count">__Reviews</span>
+                    <span id="article-3-content-section-shares-count" class="article-3-content-section-interactions-reviews-shares-count">__shares</span>
+                </span>
+
+                <span id="article-3-content-section-interactions-reviews-shares-buttons">
+                    <button id="article-3-content-section-interactions-button" class="article-3-content-section-interactions-reviews-shares-button interact-button">
+                        <i class="fa-solid fa-hands-asl-interpreting fa-lg interact-icon"></i>         <!-- Interact Icon -->
+                    </button>
+                    <button id="article-3-content-section-reviews-button" class="article-3-content-section-interactions-reviews-shares-button review-button">
+                        <i class="fa-regular fa-comments"></i>                              <!-- Reviews Icon -->
+                    </button>
+                    <button id="article-3-content-section-shares-button" class="article-3-content-section-interactions-reviews-shares-button share-button">
+                        <i class="fa-solid fa-retweet"></i></button>                          <!-- Share Icon -->
+                </span>
+
+                <span id="reviews-post-section">
+                    <figure class="profile-picture self-profile-picture" id="self-profile-picture-reviews-post-section"><img class="self-profile-picture" src="secondarypicturelogo.jpg" alt=""></figure>
+                    <textarea class="post-reviews-textarea" name="post-review" id="post-reviews-textarea" cols="0" rows="1" placeholder="Comment Your Thoughts.." aria-label="Comment box"></textarea>
+                    <button class="reviews-post-button" id="reviews-post-button">Post</button>
+                </span>
+
+            </article>
+        </section>
+
+
+                <span id="share-post-section" class="share-post-section">
+            <menu id="share-post-menu">
+            <button id="repost-button-share-post-section" class="share-post-section-buttons">Repost</button>
+            <button id="forward-button-share-post-section" class="share-post-section-buttons">Forward</button>
+            <button id="writepost-button-share-post-section" class="share-post-section-buttons">Write and Post</button>
+            </menu>
+        </span>
+
+        
+        </section>
+
+
+
+
+        <section id="section-3-main" class="reviews-section-inside-main">
+            <article id="article-1-section-3" class="articlesections-inside-reviews-section-inside-main">
+                <header><h6>Reviews</h6></header>
+            </article>
+
+            <article id="article-2-section-3" class="articlesections-inside-reviews-section-inside-main">
+
+                <span id="article-2-section-3-reviews-outer-box">
+                    <figure id="article-2-section-3-reviews-profile-picture-other-users" class="profile-picture-other-users">
+                        <img src="secondarypicturelogo.jpg" alt="#" class="profile-picture-other-users">
+                    </figure>
+
+                    <span id="article-2-section-3-reviews-section-outer">
+                        <h6 id="article-2-section-3-reviews-section-profile-name-other-users">Vishesh</h6>
+
+                        <span id="article-2-section-3-review-section">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti vero, accusamus at rem incidunt unde omnis dicta neque, modi adipisci ut tempore! Obcaecati et odit fugit molestias eos, praesentium recusandae!</p><button>...</button>
+                        </span>
+                        
+                    </span>
+
+                </span>
+
+            </article>
+
+        </section>
+
+
+
+
+
+
+    </main>
+
+
+
+<!-- Main Part Ends here !! -->
+
+
+
+<!-- Footer Part Starts here !! -->
+    <footer class="inside-footer footer" id="footer">    <!--footer contains some important links and documentations queries-->
+        <section class="section footer-backtotop" id="footer-section-1"><h6>Back To Top</h6></section>
+        <section class="section" id="footer-section-2">
+            <ul class="footer-list ul" id="footer-ul">
+                <li href="#" class="footer-ul-li contactus-button">Contact Us</li>
+                <li href="#" id="terms-condition" class="footer-ul-li termsandcondition-button">Terms & Conditions</li>
+                <li href="#" id="about-us" class="footer-ul-li aboutus-button">About Us</li>
+              </ul>
+        </section>
+    </footer>
+
+
+
+<!-- Footer Part Ends here !! -->
+
+
+</body>
+<script src="dashboard.js"></script>
+</html>
